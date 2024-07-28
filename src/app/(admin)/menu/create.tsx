@@ -144,4 +144,4 @@ const styles = StyleSheet.create({
     },
 })
 
-export default CreateProductScreen
+export default CreateProductScreen;
