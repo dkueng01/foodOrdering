@@ -1,5 +1,7 @@
 // import { Database } from './database.types';
 
+import { Database } from "./database.types";
+
 // export type Tables<T extends keyof Database['public']['Tables']> =
 //   Database['public']['Tables'][T]['Row'];
 
@@ -61,3 +63,6 @@ export type Profile = {
   id: string;
   group: string;
 };
+
+export type Tables<T extends keyof Database['public']['Tables']> = Database['public']['Tables'][T]['Row'];
+export type Enums<T extends keyof Database['public']['Enums']> = Database['public']['Enums'][T];
